@@ -1,0 +1,1 @@
+var data = {'brush-creek-ranch': {}};

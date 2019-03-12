@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="76px" viewBox="0 0 63 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>ICON</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Location" transform="translate(-771.000000, -119.000000)">
+            <g id="Right-Side">
+                <g transform="translate(608.000000, 0.000000)">
+                    <g id="ICON" transform="translate(163.000000, 119.000000)">
+                        <rect id="Rectangle" fill="#000000" fill-rule="nonzero" x="0" y="0" width="63" height="63"></rect>
+                        <polygon id="Rectangle-2" fill="#000000" fill-rule="nonzero" points="18 57 44.3144531 57 31.8017578 76"></polygon>
+                        <g id="Got_it_logo_black-(1)" transform="translate(8.000000, 18.000000)" fill="#FFFFFF">
+                            <polygon id="Fill-15" points="30.1707796 4 28.3461413 9.14423984 40.0361 13.8006569 24.4980363 19.9912645 22 27 47 16.600615 47 16.5757015 47 11.026416 47 11.0023062"></polygon>
+                            <polygon id="Fill-16" points="24 0 0 10.3552036 0 10.3812217 0 15.9954398 0 16.0198317 16.161882 23 17.9354067 17.7980062 6.78867624 13.1879242 21.5917065 7.06554016"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

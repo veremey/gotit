@@ -1,0 +1,32 @@
+@import "project";
+@import "swiper";
+@import "sentence";
+@import "map";
+@import "anima";
+@import "body";
+@import "loader";
+@import "footer";
+@import "menu";
+
+@import "colors";
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "flexbox";
+@import "reset";
+// @import "fonts/harmonia-sans";
+// @import "fonts/google";
+@import "keyframes";
+@import "loader-logo";
+@import "logo";
+@import "btn";
+@import "arrow";
+@import "print";
+
+.clip-svg {
+  position: absolute;
+  z-index: -999;
+  left: 0;
+  width: 0;
+  height: 0;
+}

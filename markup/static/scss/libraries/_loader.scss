@@ -1,0 +1,167 @@
+// .menu {
+//   &[_ngcontent-c3] {
+//     position: relative;
+//     nav[_ngcontent-c3] {
+//       position: fixed;
+//       top: 0;
+//       height: 100vh;
+//       width: 100%;
+//       left: 0;
+//       background: #000;
+//       list-style-type: none;
+//       -webkit-transform: translateX(100%);
+//       transform: translateX(100%);
+//       transition: opacity .25s linear,-webkit-transform .25s linear;
+//       transition: transform .25s linear,opacity .25s linear;
+//       transition: transform .25s linear,opacity .25s linear,-webkit-transform .25s linear;
+//       opacity: 0;
+//       padding: 20px;
+//       display: flex;
+//       align-items: center;
+//       overflow: hidden;
+//       z-index: 10;
+//       ul[_ngcontent-c3] {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         overflow-x: hidden;
+//         overflow-y: auto;
+//         max-height: 100%;
+//         width: 100%;
+//         li.desc[_ngcontent-c3] {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+//   &.active[_ngcontent-c3] nav[_ngcontent-c3] {
+//     opacity: 1;
+//     -webkit-transform: translateX(0);
+//     transform: translateX(0);
+//   }
+// }
+
+// .menu__item[_ngcontent-c3] {
+//   color: #fff;
+//   font-size: 20px;
+//   letter-spacing: 1.9px;
+//   line-height: 50px;
+//   text-align: right;
+//   text-transform: uppercase;
+// }
+
+// .menu__btn {
+//   &[_ngcontent-c3] {
+//     position: relative;
+//     z-index: 9999;
+//     margin-top: -1px;
+//     width: 28px;
+//     height: 16px;
+//     border-top: 2px solid #000;
+//     border-bottom: 2px solid #000;
+//     vertical-align: middle;
+//     transition: all .1s linear 0s;
+//     cursor: pointer;
+//     &:after {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       height: 5px;
+//       border-bottom: 2px solid #000;
+//       transition: all .1s linear 0s;
+//       z-index: 2;
+//     }
+//     span[_ngcontent-c3] {
+//       font-size: 0;
+//       text-indent: -9999px;
+//       &:after, &:before {
+//         content: '';
+//         position: absolute;
+//         top: 50%;
+//         right: 0;
+//         left: 0;
+//         opacity: 0;
+//         margin-top: -1px;
+//         border-top: 1px solid #fff;
+//         transition: all .1s linear 0s;
+//         z-index: 0;
+//       }
+//     }
+//     &:hover {
+//       opacity: .7;
+//     }
+//   }
+//   &.active[_ngcontent-c3] {
+//     border-color: transparent !important;
+//     &:hover {
+//       opacity: .9;
+//     }
+//     &:after {
+//       -webkit-transform: scale(0);
+//       transform: scale(0);
+//     }
+//     span[_ngcontent-c3] {
+//       &:after, &:before {
+//         border-width: 2px;
+//         opacity: 1;
+//       }
+//       &:after {
+//         -webkit-transform: rotate(-45deg);
+//         transform: rotate(-45deg);
+//       }
+//       &:before {
+//         -webkit-transform: rotate(45deg);
+//         transform: rotate(45deg);
+//       }
+//     }
+//   }
+// }
+
+// @media (min-width: 1260px) {
+//   .menu[_ngcontent-c3] {
+//     width: auto;
+//     nav[_ngcontent-c3] {
+//       background: #fff;
+//       align-items: center;
+//       position: static;
+//       height: auto;
+//       -webkit-transform: translateX(0);
+//       transform: translateX(0);
+//       opacity: 1;
+//       padding: 0;
+//       ul[_ngcontent-c3] {
+//         flex-direction: row;
+//         justify-content: flex-start;
+//         overflow: hidden;
+//         li {
+//           &[_ngcontent-c3] {
+//             margin-left: 43.5px;
+//           }
+//           &.mob[_ngcontent-c3] {
+//             display: none;
+//           }
+//           &.desc[_ngcontent-c3] {
+//             display: block;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .menu__item {
+//     &[_ngcontent-c3] {
+//       color: #000;
+//       font-size: 15px;
+//       line-height: 1;
+//       position: relative;
+//       transition: opacity .15s linear;
+//     }
+//     &.active[_ngcontent-c3], &[_ngcontent-c3]:hover {
+//       opacity: .7;
+//     }
+//   }
+//   .menu__btn[_ngcontent-c3] {
+//     display: none;
+//   }
+// }

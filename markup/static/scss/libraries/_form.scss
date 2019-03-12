@@ -1,0 +1,81 @@
+.form {
+
+  form {
+    display: block;
+  }
+
+  input,
+  textarea {
+    display: block;
+    border: none;
+    width: 100%;
+    background-color: $color-8;
+    @include poppins-light();
+    font-size: 12px;
+    color: $color-9;
+    letter-spacing: 1px;
+    line-height: 60px;
+    height: 60px;
+    padding: 0 20px;
+    text-transform: uppercase;
+
+    &.ng-invalid {
+      box-shadow: inset 0 0 20px 2px rgba(255, 0, 0, 0.1);
+
+      &.ng-untouched {
+        box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  textarea {
+    height: auto;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    flex-basis: 100%;
+  }
+
+  .item {
+
+    &__error {
+      margin-top: 10px;
+      color: $color-13;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+
+    &[disabled] {
+      cursor: not-allowed;
+      background: rgba( 0, 0, 0, .6);
+      color: $color-1;
+    }
+  }
+}
+
+@media (min-width: $phone-landscape) {
+  .form {
+
+    &__row {
+
+      &_half {
+
+        .form__item {
+          flex-basis: calc( 50% - 20px );
+        }
+      }
+    }
+  }
+}

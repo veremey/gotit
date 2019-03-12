@@ -1,0 +1,260 @@
+
+// .sentence[_ngcontent-c7] {
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+// }
+
+// .sentence__item[_ngcontent-c7] {
+//   margin-bottom: 40px;
+//   h2[_ngcontent-c7] {
+//     font-size: 18px;
+//     line-height: 24px;
+//     font-weight: 400;
+//     letter-spacing: .3px;
+//   }
+//   h3[_ngcontent-c7] {
+//     font-size: 28px;
+//     line-height: 36px;
+//     font-weight: 400;
+//     letter-spacing: -.35px;
+//   }
+//   img[_ngcontent-c7] {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//   }
+// }
+
+// .sentence__content[_ngcontent-c7] {
+//   padding: 0 20px 50px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   .sentence[_ngcontent-c7] {
+//     color: #000;
+//     margin-bottom: 30px;
+//     text-align: center;
+//   }
+// }
+
+// .sentence_2[_ngcontent-c7] {
+//   background: #f7f7f7;
+//   padding-bottom: 150px;
+//   .btn[_ngcontent-c7] {
+//     padding: 0 33px;
+//   }
+// }
+
+// .sentence_3[_ngcontent-c7] {
+//   padding-bottom: 230px;
+//   padding-top: 0;
+//   background: #f7f7f7;
+// }
+
+// @media (min-width: 768px) {
+//   .sentence__content[_ngcontent-c7] {
+//     justify-content: space-between;
+//     flex-direction: row;
+//     align-items: flex-start;
+//     .sentence__item[_ngcontent-c7] {
+//       text-align: left;
+//       h3[_ngcontent-c7] {
+//         font-size: 35px;
+//         line-height: 50px;
+//       }
+//       &:first-child {
+//         padding-top: 7px;
+//       }
+//       &:nth-child(2) {
+//         flex-basis: 52.6%;
+//         padding-right: 5%;
+//         margin: 0 10px 30px;
+//       }
+//       &:last-child {
+//         padding-top: 11px;
+//       }
+//     }
+//   }
+//   .sentence_2[_ngcontent-c7] .sentence__content[_ngcontent-c7] .sentence__item[_ngcontent-c7]:nth-child(2) {
+//     flex-basis: 51.6%;
+//   }
+//   .sentence_3[_ngcontent-c7] {
+//     padding-bottom: 270px;
+//   }
+// }
+
+// @media (min-width: 1260px) {
+//   .sentence[_ngcontent-c7] {
+//     padding-top: 216px;
+//     padding-bottom: 280px;
+//   }
+//   .sentence__content[_ngcontent-c7] {
+//     padding: 0 calc(50% - 610px) 50px;
+//   }
+//   .sentence__item[_ngcontent-c7] {
+//     margin-bottom: 0;
+//   }
+//   .sentence_2[_ngcontent-c7] {
+//     padding-top: 130px;
+//     padding-bottom: 280px;
+//   }
+//   .sentence_3[_ngcontent-c7] {
+//     padding-top: 0;
+//     padding-bottom: 302px;
+//   }
+// }
+
+
+
+// .sentence__item[_ngcontent-c11] {
+//   margin-bottom: 40px;
+//   max-width: 700px;
+//   h2[_ngcontent-c11] {
+//     font-size: 18px;
+//     line-height: 24px;
+//     font-weight: 400;
+//     letter-spacing: .3px;
+//   }
+//   h3[_ngcontent-c11] {
+//     font-size: 28px;
+//     line-height: 36px;
+//     font-weight: 400;
+//     letter-spacing: -.35px;
+//   }
+//   img[_ngcontent-c11] {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//   }
+// }
+
+// .sentence__gallery[_ngcontent-c11] {
+//   padding: 0 20px;
+//   .sentence__item[_ngcontent-c11] {
+//     margin-bottom: 0;
+//   }
+// }
+
+// .sentence__wrap[_ngcontent-c11] {
+//   padding-top: 22px;
+//   padding-left: 13px;
+//   word-spacing: 5px;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .sentence__instagram[_ngcontent-c11], .sentence__pagination[_ngcontent-c11] {
+//   color: #888;
+//   font-size: 11px;
+//   letter-spacing: 1.5px;
+//   line-height: 35px;
+// }
+
+// .sentence__instagram[_ngcontent-c11] span[_ngcontent-c11], .sentence__pagination[_ngcontent-c11] span[_ngcontent-c11] {
+//   opacity: .5;
+// }
+
+// .sentence__instagram[_ngcontent-c11] {
+//   transition: opacity .15s linear;
+//   line-height: 1.2;
+//   &:hover {
+//     opacity: .7;
+//   }
+// }
+
+// .sentence__navigation[_ngcontent-c11] {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: 0 13px;
+//   width: 65px;
+// }
+
+// .sentence__next[_ngcontent-c11], .sentence__prev[_ngcontent-c11] {
+//   height: 35px;
+//   display: flex;
+//   align-items: center;
+//   cursor: pointer;
+// }
+
+// .sentence__next[_ngcontent-c11] i[_ngcontent-c11], .sentence__prev[_ngcontent-c11] i[_ngcontent-c11] {
+//   height: 2px;
+//   width: 17px;
+//   position: relative;
+//   background: #888;
+//   display: block;
+// }
+
+// .sentence__next[_ngcontent-c11] i[_ngcontent-c11] {
+//   &:after, &:before {
+//     content: '';
+//     display: block;
+//     width: 5px;
+//     height: 2px;
+//     position: absolute;
+//     left: -1px;
+//     background: #888;
+//   }
+// }
+
+// .sentence__prev[_ngcontent-c11] i[_ngcontent-c11] {
+//   &:after, &:before {
+//     content: '';
+//     display: block;
+//     width: 5px;
+//     height: 2px;
+//     position: absolute;
+//     left: -1px;
+//     background: #888;
+//   }
+// }
+
+// .sentence__next[_ngcontent-c11] i[_ngcontent-c11]:before, .sentence__prev[_ngcontent-c11] i[_ngcontent-c11]:before {
+//   top: 0;
+//   -webkit-transform: rotate(-45deg) translate(20%, -30%);
+//   transform: rotate(-45deg) translate(20%, -30%);
+// }
+
+// .sentence__next[_ngcontent-c11] i[_ngcontent-c11]:after, .sentence__prev[_ngcontent-c11] i[_ngcontent-c11]:after {
+//   bottom: 0;
+//   -webkit-transform: rotate(45deg) translate(20%, 30%);
+//   transform: rotate(45deg) translate(20%, 30%);
+// }
+
+// .sentence__next[_ngcontent-c11] i[_ngcontent-c11] {
+//   -webkit-transform: rotate(180deg);
+//   transform: rotate(180deg);
+// }
+
+// @media (min-width: 768px) {
+//   .sentence__gallery[_ngcontent-c11] {
+//     padding-right: 0;
+//     .sentence__item[_ngcontent-c11] {
+//       width: auto;
+//     }
+//   }
+//   .sentence__wrap[_ngcontent-c11] {
+//     max-width: 1292px;
+//   }
+//   .sentence__navigation[_ngcontent-c11] {
+//     margin-right: 55px;
+//   }
+// }
+
+// @media (min-width: 1260px) {
+//   .sentence__item[_ngcontent-c11] {
+//     margin-bottom: 0;
+//   }
+//   .sentence__wrap[_ngcontent-c11] {
+//     padding-right: calc(50% - 610px);
+//   }
+//   .sentence__gallery[_ngcontent-c11] {
+//     padding-left: calc(50% - 610px);
+//   }
+//   .sentence__next[_ngcontent-c11], .sentence__prev[_ngcontent-c11] {
+//     transition: opacity .15s linear;
+//   }
+//   .sentence__next[_ngcontent-c11]:hover, .sentence__prev[_ngcontent-c11]:hover {
+//     opacity: .8;
+//   }
+// }

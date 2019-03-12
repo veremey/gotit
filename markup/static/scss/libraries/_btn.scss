@@ -1,0 +1,112 @@
+.btn {
+  position: relative;
+  height: 60px;
+  border: none;
+  padding: 0 32px;
+  color: $color-2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  background: $color-1;
+  text-align: left;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  &_2 {
+    background-color: transparent;
+    border: 1px solid $color-2;
+    padding: 0 39px 0 40px;
+    letter-spacing: 1.9px;
+  }
+
+  &_3 {
+    color: $color-1;
+    background-color: $color-2;
+    border: 1px solid $color-2;
+    padding: 0 39px 0 40px;
+    letter-spacing: 1.9px;
+  }
+
+  &_4 {
+    background-color: transparent;
+    border: 1px solid $color-1;
+    color: $color-1;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .btn {
+    transition: background-color .15s linear, color .15s linear;
+
+    &:hover,
+    &:active {
+      background-color: $color-2;
+      color: $color-1;
+    }
+
+    &_2 {
+
+      &:hover,
+      &:active {
+        background-color: $color-2;
+      }
+    }
+
+    &_3,
+    &_4 {
+
+      &:hover,
+      &:active {
+        color: $color-2;
+        background-color: $color-1;
+      }
+    }
+  }
+}
+
+
+
+.btn-gotit {
+  $btn-color: #fff;
+  $btn-color-dark: #000;
+  $btn-height: 60px;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: $btn-height/2 solid $btn-color-dark;
+    border-bottom: $btn-height/2 solid $btn-color-dark;
+    transition: .6s;
+  }
+
+  &:before {
+    border-right: $btn-height/2 solid transparent;
+    transform: translateX(-100%);
+  }
+
+  &:after {
+    border-left: $btn-height/2 solid transparent;
+    transform: translateX(100%);
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #fff;
+
+    &:before { transform: translateX(-30%); }
+    &:after { transform: translateX(30%); }
+  }
+  span {
+    position: relative;
+    z-index: 6;
+  }
+}

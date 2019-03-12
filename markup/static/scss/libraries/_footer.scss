@@ -1,0 +1,96 @@
+// .footer__copyright[_ngcontent-c8] {
+//   color: #fff;
+//   font-size: 12px;
+//   line-height: 20px;
+//   padding-left: 62px;
+//   padding-right: 63px;
+//   max-width: 245px;
+//   margin: 8px auto 0;
+//   letter-spacing: .5px;
+//   position: relative;
+// }
+
+// .footer__logo[_ngcontent-c8] {
+//   position: absolute;
+//   left: 0;
+//   top: 50%;
+//   -webkit-transform: translateY(-50%);
+//   transform: translateY(-50%);
+//   max-width: 62px;
+//   cursor: pointer;
+//   .loader-logo[_ngcontent-c8] {
+//     opacity: 0;
+//     transition: opacity .15s linear;
+//     background: #000;
+//     width: 47px;
+//     height: 47px;
+//     position: absolute;
+//     left: -2px;
+//     top: -10px;
+//     .content[_ngcontent-c8] {
+//       background: #fff;
+//     }
+//   }
+//   &:hover {
+//     .loader-logo[_ngcontent-c8] {
+//       opacity: 1;
+//     }
+//     img[_ngcontent-c8] {
+//       opacity: 0;
+//     }
+//   }
+//   img[_ngcontent-c8] {
+//     transition: opacity .15s linear;
+//     max-width: 100%;
+//     display: block;
+//     height: auto;
+//   }
+// }
+
+// .footer__wrap[_ngcontent-c8] {
+//   position: relative;
+// }
+
+// .footer__menu[_ngcontent-c8] .menu__item[_ngcontent-c8] {
+//   color: #fff;
+//   font-size: 11px;
+//   letter-spacing: 2px;
+//   line-height: 35px;
+//   text-align: center;
+//   a[_ngcontent-c8] {
+//     color: #fff;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .footer__wrap[_ngcontent-c8] {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: flex-end;
+//   }
+//   .footer__item[_ngcontent-c8] {
+//     margin-right: 5.7%;
+//   }
+//   .footer__item_menus[_ngcontent-c8] {
+//     display: flex;
+//     margin-right: 40px;
+//   }
+//   .footer__menu[_ngcontent-c8] {
+//     margin-right: 73px;
+//     .menu__item[_ngcontent-c8] {
+//       text-align: left;
+//     }
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+// @media (min-width: 1260px) {
+//   .footer__menu[_ngcontent-c8] .menu__item[_ngcontent-c8] {
+//     transition: opacity .15s linear;
+//     &:hover {
+//       opacity: .8;
+//     }
+//   }
+// }

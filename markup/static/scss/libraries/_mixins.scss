@@ -1,0 +1,126 @@
+//fonts
+@mixin sf-regular() {
+  font-family: "SF NS Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin roboto-regular() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin roboto-bold() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin poppins-regular() {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin poppins-light() {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin poppins-bold() {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin harmonia-light() {
+  font-family: 'harmoniasanslight', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin harmonia-regular() {
+  font-family: 'harmoniasansregular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin harmonia-semi-bold() {
+  font-family: 'harmoniasanssemibold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin harmonia-bold() {
+  font-family: 'harmoniasansbold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin justify() {
+  text-align: justify;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+  }
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+@mixin absoluteCenterX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX( -50% );
+}
+@mixin absoluteCenterY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY( -50% );
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+          eot: "?",
+          svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}

@@ -1,0 +1,134 @@
+
+.site__footer
+  background: #000
+  padding: 550px 20px 80px
+  position: relative
+  .arrow
+    position: absolute
+    right: 0
+    top: 0
+
+.site__footer_2
+  padding-top: 87px
+
+.footer__copyright
+  color: #fff
+  font-size: 12px
+  line-height: 20px
+  padding-left: 62px
+  padding-right: 63px
+  max-width: 245px
+  margin: 8px auto 0
+  letter-spacing: .5px
+  position: relative
+
+.footer__logo
+  position: absolute
+  left: 0
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  transform: translateY(-50%)
+  max-width: 62px
+  cursor: pointer
+  .loader-logo
+    opacity: 0
+    transition: opacity .15s linear
+    background: #000
+    width: 47px
+    height: 47px
+    position: absolute
+    left: -2px
+    top: -10px
+    .content
+      background: #fff
+  &:hover
+    .loader-logo
+      opacity: 1
+    img
+      opacity: 0
+  img
+    transition: opacity .15s linear
+    max-width: 100%
+    display: block
+    height: auto
+
+.footer__wrap
+  position: relative
+
+.footer__menu .menu__item
+  color: #fff
+  font-size: 11px
+  letter-spacing: 2px
+  line-height: 35px
+  text-align: center
+  a
+    color: #fff
+
+
+// @media (min-width: 1260px)
+//   .footer__menu .menu__item
+//     transition: opacity .15s linear
+//     &:hover
+//       opacity: .8
+
+
+
+
+
+
+//   //
+//   //
+//   //
+//   //
+//   //
+//   //
+//   //
+//   //
+//   //
+//   //
+
+@media (min-width: 480px)
+  .site__footer
+    padding-top: 300px
+  .site__footer_2
+    padding-top: 87px
+
+@media (min-width: 768px)
+  .site__footer
+    padding-top: 350px
+    .arrow
+      top: 10px
+      right: 2px
+  .site__footer_2
+    padding-top: 87px
+  .footer__wrap
+    display: flex
+    flex-direction: row-reverse
+    justify-content: flex-end
+
+  .footer__item
+    margin-right: 5.7%
+
+  .footer__item_menus
+    display: flex
+    margin-right: 40px
+
+  .footer__menu
+    margin-right: 73px
+    .menu__item
+      text-align: left
+
+    &:last-child
+      margin-right: 0
+
+@media (min-width: 1260px)
+  .site__footer
+    padding: 386px calc(50% - 610px) 113px
+  .site__footer_2
+    padding-top: 87px
+  .footer__menu .menu__item
+    transition: opacity .15s linear
+    &:hover
+      opacity: .8
+
+

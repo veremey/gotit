@@ -1,0 +1,258 @@
+// File for sass-vars.
+$n: transparent
+$gold: #e1caae
+
+
+
+@-webkit-keyframes in
+    0%
+        margin-left: 100%
+    50%
+        margin-left: 0
+    100%
+        margin-left: -100%
+
+@keyframes in
+    0%
+        margin-left: 100%
+    50%
+        margin-left: 0
+    100%
+        margin-left: -100%
+
+@-webkit-keyframes out
+    0%
+        margin-left: -100%
+    50%
+        margin-left: 0
+    100%
+        margin-left: 100%
+
+@keyframes out
+    0%
+        margin-left: -100%
+    50%
+        margin-left: 0
+    100%
+        margin-left: 100%
+
+
+@-webkit-keyframes in-2
+    0%,35%
+        margin-left: 100%
+    50%
+        margin-left: 0
+    100%,65%
+        margin-left: -100%
+
+@keyframes in-2
+    0%,35%
+        margin-left: 100%
+    50%
+        margin-left: 0
+    100%,65%
+        margin-left: -100%
+
+@-webkit-keyframes out-2
+    0%,35%
+        margin-left: -100%
+    50%
+        margin-left: 0
+    100%,65%
+        margin-left: 100%
+
+@keyframes out-2
+    0%,35%
+        margin-left: -100%
+    50%
+        margin-left: 0
+    100%,65%
+        margin-left: 100%
+
+
+@-webkit-keyframes click-me
+    33%,66%
+        box-shadow: 0 3px 3px rgba(0,0,0,.1)
+        -webkit-transform: scale(1.05) translate3d(0,0,0)
+        transform: scale(1.05) translate3d(0,0,0)
+    50%
+        -webkit-transform: scale(1.1) translate3d(0,0,0)
+        transform: scale(1.1) translate3d(0,0,0)
+
+@keyframes click-me
+    33%,66%
+        box-shadow: 0 3px 3px rgba(0,0,0,.1)
+        -webkit-transform: scale(1.05) translate3d(0,0,0)
+        transform: scale(1.05) translate3d(0,0,0)
+    50%
+        -webkit-transform: scale(1.1) translate3d(0,0,0)
+        transform: scale(1.1) translate3d(0,0,0)
+
+@-webkit-keyframes click-me-2
+    0%,70%
+        -webkit-transform: translateY(-100%)
+        transform: translateY(-100%)
+    100%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@keyframes click-me-2
+    0%,70%
+        -webkit-transform: translateY(-100%)
+        transform: translateY(-100%)
+    100%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@-webkit-keyframes click-me-3
+    0%,70%
+        -webkit-transform: translateY(0) rotate(180deg)
+        transform: translateY(0) rotate(180deg)
+    100%
+        -webkit-transform: translateY(-100%) rotate(180deg)
+        transform: translateY(-100%) rotate(180deg)
+
+@keyframes click-me-3
+    0%,70%
+        -webkit-transform: translateY(0) rotate(180deg)
+        transform: translateY(0) rotate(180deg)
+    100%
+        -webkit-transform: translateY(-100%) rotate(180deg)
+        transform: translateY(-100%) rotate(180deg)
+
+
+
+.loader-logo
+    width: 75px
+    height: 75px
+    position: relative
+
+
+.loader-logo .content
+    width: 100%
+    height: 100%
+    background: #000
+
+
+.loader-logo .bottom,.loader-logo .top
+    width: 100%
+    height: 100%
+    position: absolute
+    overflow: hidden
+
+
+.loader-logo .left-arrow .top
+    -webkit-clip-path: url(#left-top)
+    clip-path: url(#left-top)
+
+
+.loader-logo .left-arrow .top .content
+    -webkit-animation: 3s ease-in-out infinite forwards in
+    animation: 3s ease-in-out infinite forwards in
+
+
+.loader-logo .left-arrow .bottom
+    -webkit-clip-path: url(#left-bottom)
+    clip-path: url(#left-bottom)
+
+
+.loader-logo .left-arrow .bottom .content
+    margin-left: -100%
+    -webkit-animation: 3s ease-in-out 1.2s infinite forwards out
+    animation: 3s ease-in-out 1.2s infinite forwards out
+
+
+.loader-logo .right-arrow .top
+    -webkit-clip-path: url(#right-top)
+    clip-path: url(#right-top)
+
+
+.loader-logo .right-arrow .top .content
+    margin-left: 100%
+    -webkit-animation: 3s ease-in-out 1.2s infinite forwards in
+    animation: 3s ease-in-out 1.2s infinite forwards in
+
+
+.loader-logo .right-arrow .bottom
+    -webkit-clip-path: url(#right-bottom)
+    clip-path: url(#right-bottom)
+
+
+.loader-logo .right-arrow .bottom .content
+    -webkit-animation: 3s ease-in-out infinite forwards out
+    animation: 3s ease-in-out infinite forwards out
+
+
+.logo
+    display: block
+    position: relative
+    overflow: hidden
+
+
+.logo:hover .loader-logo
+    opacity: 1
+    -webkit-animation-play-state: running
+    animation-play-state: running
+
+
+.logo__main,.logo__sticky
+    display: block
+    transition: opacity .25s linear
+
+
+.logo__main>svg,.logo__sticky>svg
+    width: 115px
+    height: auto
+
+
+.logo__main>img,.logo__sticky>img
+    display: block
+    width: 115px
+    height: auto
+
+
+.logo__sticky
+    opacity: 0
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
+
+
+.logo__sticky img
+    max-width: 60px
+    max-height: 100%
+    width: auto
+    display: block
+    transition: opacity .3s linear
+
+
+.logo__sticky:hover img
+    opacity: 0
+
+
+.logo .loader-logo
+    background: #000
+    display: block
+    transition: opacity .25s linear
+    position: absolute
+    width: 30px
+    height: 30px
+    top: 2px
+    left: 0
+    opacity: 0
+    -webkit-animation-play-state: initial
+    animation-play-state: initial
+
+
+.logo .loader-logo span
+    display: block
+
+
+.logo .loader-logo .content
+    background: #fff
+

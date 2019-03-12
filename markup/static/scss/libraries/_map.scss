@@ -1,0 +1,156 @@
+// .map[_ngcontent-c9] {
+//   display: flex;
+//   flex-wrap: wrap;
+//   position: absolute;
+//   top: -192px;
+//   left: 50%;
+//   -webkit-transform: translate(-50%);
+//   transform: translate(-50%);
+//   max-width: 1224px;
+//   width: calc(100% - 40px);
+// }
+
+// .map__item[_ngcontent-c9] {
+//   background-color: #fff;
+//   background-size: cover;
+//   flex-basis: 100%;
+//   &:first-child {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// .map__container[_ngcontent-c9] {
+//   height: 100%;
+//   position: relative;
+//   min-height: 320px;
+// }
+
+// .map__title[_ngcontent-c9] {
+//   opacity: .3;
+//   color: #000;
+//   font-size: 18px;
+//   line-height: 24px;
+//   margin-bottom: 24px;
+//   font-weight: 400;
+// }
+
+// .map__location[_ngcontent-c9] {
+//   color: #000;
+//   font-size: 35px;
+//   line-height: 45px;
+//   font-weight: 400;
+//   margin-bottom: 18px;
+// }
+
+// .map__address[_ngcontent-c9] {
+//   color: grey;
+//   font-size: 22px;
+//   line-height: 34px;
+//   margin-bottom: 29px;
+//   a[_ngcontent-c9] {
+//     color: grey;
+//   }
+// }
+
+// .map__contact[_ngcontent-c9] {
+//   margin-right: 37px;
+//   color: grey;
+//   font-size: 12px;
+//   line-height: 34px;
+//   display: inline-block;
+//   background-repeat: no-repeat;
+//   letter-spacing: .3px;
+//   a[_ngcontent-c9] {
+//     color: grey;
+//   }
+// }
+
+// .map__contacts[_ngcontent-c9] {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .map__content[_ngcontent-c9] {
+//   padding: 30px;
+//   min-height: 320px;
+// }
+
+// .map[_ngcontent-c9] {
+//   .marker[_ngcontent-c9] {
+//     -webkit-transform: translate(-35%, -73%);
+//     transform: translate(-35%, -73%);
+//     cursor: pointer;
+//     width: 63px;
+//     height: 76px;
+//     position: absolute;
+//     overflow: hidden;
+//     .loader-logo[_ngcontent-c9] {
+//       background: #000;
+//       width: 50px;
+//       height: 50px;
+//       position: absolute;
+//       left: 0 !important;
+//       top: 0 !important;
+//       -webkit-transform: translate(6px, 6px);
+//       transform: translate(6px, 6px);
+//       .content[_ngcontent-c9] {
+//         background: #fff;
+//       }
+//     }
+//     img[_ngcontent-c9] {
+//       width: 100%;
+//       display: block;
+//       height: auto;
+//     }
+//   }
+//   agm-map[_ngcontent-c9] {
+//     height: 100%;
+//     position: relative;
+//     min-height: 320px;
+//     display: block;
+//   }
+// }
+
+// @media (min-width: 480px) {
+//   .map[_ngcontent-c9] {
+//     flex-wrap: nowrap;
+//   }
+//   .map__item[_ngcontent-c9] {
+//     flex-basis: 50%;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .map[_ngcontent-c9] {
+//     top: -222px;
+//   }
+//   .map__item[_ngcontent-c9] {
+//     min-height: 488px;
+//   }
+//   .map__content[_ngcontent-c9] {
+//     padding: 40px 60px 35px;
+//   }
+//   .map__title[_ngcontent-c9] {
+//     margin-bottom: 34px;
+//   }
+//   .map__location[_ngcontent-c9] {
+//     font-size: 45px;
+//     line-height: 55px;
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   .map__content[_ngcontent-c9] {
+//     padding: 40px 120px 35px;
+//   }
+// }
+
+// @media (min-width: 1260px) {
+//   .map__address[_ngcontent-c9], .map__contact[_ngcontent-c9] {
+//     transition: opacity .15s linear;
+//   }
+//   .map__address[_ngcontent-c9]:hover, .map__contact[_ngcontent-c9]:hover {
+//     opacity: .7;
+//   }
+// }
