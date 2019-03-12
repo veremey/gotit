@@ -2,6 +2,8 @@
 
 'brush-creek-ranch': {},
 
+'case': {},
+
 'clients': {},
 
 'contact': {},
@@ -72,6 +74,9 @@ __pages: [{
              },{
                 name: 'job',
                 href: 'job.html'
+             },{
+                name: 'list',
+                href: 'list.html'
              },{
                 name: 'privacy-policy',
                 href: 'privacy-policy.html'
