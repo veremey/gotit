@@ -75,8 +75,8 @@ __pages: [{
                 name: 'job',
                 href: 'job.html'
              },{
-                name: 'list',
-                href: 'list.html'
+                name: 'pageList',
+                href: 'pageList.html'
              },{
                 name: 'privacy-policy',
                 href: 'privacy-policy.html'
