@@ -8,6 +8,13 @@
 
 'footer-inner': {},
 
+'head': {
+    defaults: {
+        title: 'Got IT Digital Media <> Web Design & Marketing Firm | Chicago, IL 60606',
+        useSocialMetaTags: false
+    }
+},
+
 'header': {
 	item: [{
 		link: 'work'
@@ -33,13 +40,6 @@
 'project': {},
 
 'pure-aire': {},
-
-'head': {
-    defaults: {
-        title: 'Got IT Digital Media <> Web Design & Marketing Firm | Chicago, IL 60606',
-        useSocialMetaTags: false
-    }
-},
 
 'vv-supremo': {},
 
