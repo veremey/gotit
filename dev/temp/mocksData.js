@@ -2,9 +2,9 @@
 
 'brush-creek-ranch': {},
 
-'case': {},
-
 'clients': {},
+
+'case': {},
 
 'contact': {},
 
