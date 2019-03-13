@@ -66,11 +66,14 @@
     min-height: 75px;
     align-items: flex-end;
     margin-bottom: 16px;
+    overflow: hidden;
     img {
       display: block;
       height: auto;
       max-width: 100%;
       margin-right: auto;
+      transform: translateY(-300%);
+      transition: 0.6s .4s;
     }
   }
 }
@@ -238,12 +241,12 @@
       bottom: calc(45px * .71);
     }
     .slick-active {
-      // .item__content {
-      //   max-height: 10000px;
-      // }
-      // .item__images {
-      //   max-height: 10000px;
-      // }
+      .item__logo img {
+        transform: translate(0%)
+      }
+      .hidden-title span {
+        transform: translate(0);
+      }
     }
   }
   .projects__all, .projects__next {

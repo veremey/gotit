@@ -1,0 +1,43 @@
+
+.blog
+	&-list
+		display: flex
+		justify-content: space-between
+		padding: 0
+		margin: 0
+		list-style: none
+	&__item
+		width: 30%
+	&__pic
+		display: block
+		position: relative
+		height: 0
+		width: 100%
+		padding-bottom: 100%
+		margin-bottom: 24px
+	&__img
+		+vcenter
+	&__label
+		position: absolute
+		top: 30px
+		left: 0
+		padding: 10px 20px
+		background-color: #000
+		color: #fff
+		font-size: 24px
+		line-height: .9
+		+hb
+	&__title
+		font-size: 20px
+		color: #000
+		+hb
+		a
+			font-size: 20px
+			color: #000
+			+hb
+			&:hover
+				color: #343434
+	.date
+		font-size: 12px
+		color: #000
+		+hr

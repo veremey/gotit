@@ -1,10 +1,12 @@
 'about': {},
 
+'blog': {},
+
 'brush-creek-ranch': {},
 
-'clients': {},
-
 'case': {},
+
+'clients': {},
 
 'contact': {},
 
@@ -62,6 +64,9 @@ __iconsData: {
 __pages: [{
                 name: 'about',
                 href: 'about.html'
+             },{
+                name: 'blog',
+                href: 'blog.html'
              },{
                 name: 'clients',
                 href: 'clients.html'
