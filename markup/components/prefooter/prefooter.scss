@@ -2,7 +2,7 @@
 
 .sentence {
   padding-top: 100px;
-  padding-bottom: 250px;
+  // padding-bottom: 250px;
 }
 
 .sentence__item {
@@ -42,14 +42,14 @@
 
 .sentence_2 {
   background: #f7f7f7;
-  padding-bottom: 250px;
+  // padding-bottom: 250px;
   .btn {
     padding: 0 33px;
   }
 }
 
 .sentence_3 {
-  padding-bottom: 230px;
+  // padding-bottom: 230px;
   padding-top: 0;
   background: #f7f7f7;
 }
@@ -82,14 +82,14 @@
     flex-basis: 51.6%;
   }
   .sentence_3 {
-    padding-bottom: 270px;
+    // padding-bottom: 270px;
   }
 }
 
 @media (min-width: 1260px) {
   .sentence {
     padding-top: 216px;
-    padding-bottom: 280px;
+    // padding-bottom: 280px;
   }
   .sentence__content {
     padding: 0 calc(50% - 610px) 50px;
@@ -99,11 +99,11 @@
   }
   .sentence_2 {
     padding-top: 130px;
-    padding-bottom: 280px;
+    // padding-bottom: 280px;
   }
   .sentence_3 {
     padding-top: 0;
-    padding-bottom: 302px;
+    // padding-bottom: 302px;
   }
 }
 

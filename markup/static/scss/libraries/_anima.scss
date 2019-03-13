@@ -1,87 +1,87 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,600,700|Roboto:400,700);
 
-* {
-  -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+// * {
+//   -webkit-text-size-adjust: none;
+//   -webkit-font-smoothing: antialiased;
+//   box-sizing: border-box;
+// }
 
-a, article, aside, audio, b, body, canvas, dd, details, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, img, label, li, mark, menu, nav, ol, p, section, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, video {
-  -webkit-tap-highlight-color: transparent;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: 0 0;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-}
+// a, article, aside, audio, b, body, canvas, dd, details, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, img, label, li, mark, menu, nav, ol, p, section, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, video {
+//   -webkit-tap-highlight-color: transparent;
+//   border: 0;
+//   outline: 0;
+//   vertical-align: baseline;
+//   background: 0 0;
+//   font-size: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
 
-a {
-  background: 0 0;
-}
+// a {
+//   background: 0 0;
+// }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+// table {
+//   border-collapse: collapse;
+//   border-spacing: 0;
+// }
 
-td {
-  vertical-align: top;
-  img {
-    vertical-align: top;
-  }
-}
+// td {
+//   vertical-align: top;
+//   img {
+//     vertical-align: top;
+//   }
+// }
 
-button, input, select, textarea {
-  font-size: 12px;
-  font-family: Arial,Helvetica,sans-serif;
-  margin: 0;
-}
+// button, input, select, textarea {
+//   font-size: 12px;
+//   font-family: Arial,Helvetica,sans-serif;
+//   margin: 0;
+// }
 
-input {
-  &[type=email], &[type=number], &[type=password], &[type=phone], &[type=text] {
-    font: 12px Arial,Helvetica,sans-serif;
-    padding: 0;
-  }
-}
+// input {
+//   &[type=email], &[type=number], &[type=password], &[type=phone], &[type=text] {
+//     font: 12px Arial,Helvetica,sans-serif;
+//     padding: 0;
+//   }
+// }
 
-textarea {
-  font: 12px Arial,Helvetica,sans-serif;
-  padding: 0;
-}
+// textarea {
+//   font: 12px Arial,Helvetica,sans-serif;
+//   padding: 0;
+// }
 
-input {
-  &[type=checkbox] {
-    vertical-align: bottom;
-  }
-  &[type=radio] {
-    vertical-align: text-bottom;
-  }
-}
+// input {
+//   &[type=checkbox] {
+//     vertical-align: bottom;
+//   }
+//   &[type=radio] {
+//     vertical-align: text-bottom;
+//   }
+// }
 
-sub {
-  vertical-align: sub;
-  font-size: smaller;
-}
+// sub {
+//   vertical-align: sub;
+//   font-size: smaller;
+// }
 
-sup {
-  vertical-align: super;
-  font-size: smaller;
-}
+// sup {
+//   vertical-align: super;
+//   font-size: smaller;
+// }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+// article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+//   display: block;
+// }
 
-ol, ul {
-  list-style: none;
-}
+// ol, ul {
+//   list-style: none;
+// }
 
-html {
-  overflow-y: auto;
-  overflow-x: auto;
-}
+// html {
+//   overflow-y: auto;
+//   overflow-x: auto;
+// }
 
 body, html {
   height: 100%;

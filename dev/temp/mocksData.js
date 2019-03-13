@@ -80,6 +80,9 @@ __pages: [{
                 name: 'about',
                 href: 'about.html'
              },{
+                name: 'blog-item',
+                href: 'blog-item.html'
+             },{
                 name: 'blog',
                 href: 'blog.html'
              },{

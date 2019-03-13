@@ -50,49 +50,76 @@
     background: #fff
 
 .menu
-  &
-    position: relative
-    nav
-      position: fixed
-      top: 0
-      height: 100vh
-      width: 100%
-      left: 0
-      background: #000
-      list-style-type: none
-      -webkit-transform: translateX(100%)
-      transform: translateX(100%)
-      transition: opacity .25s linear,-webkit-transform .25s linear
-      transition: transform .25s linear,opacity .25s linear
-      transition: transform .25s linear,opacity .25s linear,-webkit-transform .25s linear
-      opacity: 0
-      padding: 20px
+  position: relative
+  nav
+    position: fixed
+    top: 0
+    height: 100vh
+    width: 100%
+    left: 0
+    background: #000
+    list-style-type: none
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+    transition: opacity .25s linear,-webkit-transform .25s linear
+    transition: transform .25s linear,opacity .25s linear
+    transition: transform .25s linear,opacity .25s linear,-webkit-transform .25s linear
+    opacity: 0
+    padding: 20px
+    display: flex
+    align-items: center
+    overflow: hidden
+    z-index: 10
+    ul
       display: flex
+      flex-direction: column
       align-items: center
-      overflow: hidden
-      z-index: 10
-      ul
-        display: flex
-        flex-direction: column
-        align-items: center
-        overflow-x: hidden
-        overflow-y: auto
-        max-height: 100%
-        width: 100%
-        li.desc
-          display: none
+      overflow-x: hidden
+      overflow-y: auto
+      max-height: 100%
+      width: 100%
+      li.desc
+        display: none
+      li
+        &:nth-of-type(1)
+          a
+            transition: .4s
+        &:nth-of-type(2)
+          a
+            transition: .4s .2s
+        &:nth-of-type(3)
+          a
+            transition: .4s .3s
+        &:nth-of-type(4)
+          a
+            transition: .4s .4s
+        &:nth-of-type(5)
+          a
+            transition: .4s .5s
+        &:nth-of-type(6)
+          a
+            transition: .4s .6s
+        &:nth-of-type(7)
+          a
+            transition: .4s .7s
+
   &.active nav
     opacity: 1
     -webkit-transform: translateX(0)
     transform: translateX(0)
 
 .menu__item
+  display: inline-block
   color: #fff
   font-size: 20px
   letter-spacing: 1.9px
   line-height: 50px
   text-align: right
   text-transform: uppercase
+  +try(-20px)
+
+  &.is-animated
+    +try(0)
 
 .menu__btn
   &

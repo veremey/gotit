@@ -19,10 +19,8 @@ function initGlobalAnimations(container, selfTriggeredElems) {
 	var $container = $('.' + container);
 	var selfTriggeredElems = selfTriggeredElems;
 
-	var tl = new TimelineMax();
-	var scene;
-
 	$('.page').addClass('scrollmagic-innited');
+
 
 	if($container.hasClass('is-animated')) {
 		$.each(selfTriggeredElems, function(index, value) {
@@ -36,74 +34,41 @@ function initGlobalAnimations(container, selfTriggeredElems) {
 	}
 }
 
-$(function () {
+
 	/*--- global animations init ---*/
 	/*---------------------------------------------------------------------*/
-	$(window).on('load', function() {
 
+	$(document).ready(function() {
+		// #1
 		var selfTriggeredElems = {
 			el1: {
 				selector: '.logo',
-				triggerHook: 0.7,
-				class: 'is-animated'
-			},
-			el2: {
-				selector: '[data-stagger]',
-				triggerHook: 0.7,
-				class: 'is-animated'
-			}
-		};
-		initGlobalAnimations( 'header', selfTriggeredElems );
-
-		var selfTriggeredElems = {
-			el1: {
-				selector: '[data-stagger]',
-				triggerHook: 0.7,
-				class: 'is-animated'
-			}
-		};
-		initGlobalAnimations( 'startscreen', selfTriggeredElems );
-
-		var selfTriggeredElems = {
-			el1: {
-				selector: '.wall__picture',
 				triggerHook: 1,
 				class: 'is-animated'
 			},
 			el2: {
-				selector: '.btn-play',
-				triggerHook: 0.5,
+				selector: '.menu__item',
+				triggerHook: 1,
+				class: 'is-animated'
+			}
+		};
+		initGlobalAnimations( 'site__header', selfTriggeredElems );
+		// #2
+		var selfTriggeredElems = {
+			el1: {
+				selector: '.projects__container',
+				triggerHook: 1,
 				class: 'is-animated'
 			},
-			el3: {
-				selector: '[data-stagger]',
-				triggerHook: .95,
+			el2: {
+				selector: '.menu__item',
+				triggerHook: 1,
 				class: 'is-animated'
 			}
 		};
-		initGlobalAnimations( 'section', selfTriggeredElems );
+		initGlobalAnimations( 'projects', selfTriggeredElems );
 
-		var selfTriggeredElems = {
-			el1: {
-				selector: '[data-stagger]',
-				triggerHook: 0.9,
-				class: 'is-animated'
-			}
-		};
-		initGlobalAnimations( 'coin', selfTriggeredElems );
-
-		var selfTriggeredElems = {
-			el1: {
-				selector: '[data-stagger]',
-				triggerHook: 0.8,
-				class: 'is-animated'
-			}
-		};
-		initGlobalAnimations( 'section_buy ', selfTriggeredElems );
+	});//close window load
 
 
 
-	});
-
-
-});

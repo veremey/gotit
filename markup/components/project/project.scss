@@ -1,8 +1,4 @@
 
-.projects {
-  position: relative;
-}
-
 .projects__item {
   padding: 53px 20px 126px;
   min-height: 100vh;
@@ -16,6 +12,14 @@
 }
 
 .projects {
+  position: relative;
+  &__container {
+    overflow: hidden;
+    max-height: 0;
+    &.is-animated{
+      max-height: 4000px
+    }
+  }
   .item__title {
     color: #fff;
     font-size: 28px;
