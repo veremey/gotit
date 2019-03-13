@@ -1,0 +1,28 @@
+
+<section  class="hero hero_3">
+	<div  class="hero__wrap">
+		<div  class="hero__content">
+			<h1 aria-level="1" role="heading" >blog</h1>
+		</div>
+		<a  class="arrow"><span ><i ></i></span><span ><i ></i></span></a>
+	</div>
+</section>
+<section class="about">
+	<ul class="filter">
+		<li><a href="#">Latest News</a></li>
+		<li><a href="#">Categories</a></li>
+		<li><a href="#">Search Blog</a></li>
+	</ul>
+	<ul class="blog-list">
+		{{#each item}}
+			<li class="blog__item">
+				<a href="#" class="blog__pic">
+					<span class="blog__label">Category</span>
+					<img src="{{img}}" alt="{{title}}" class="blog__img">
+				</a>
+				<h3 class="blog__title" aria-level="3" role="heading">{{title}}</h3>
+				<p class="date"><time datetime="2019-01-01"> 01 January 2019</time></p>
+			</li>
+		{{/each}}
+	</ul>
+</section>

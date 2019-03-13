@@ -1,12 +1,23 @@
 'about': {},
 
+'blog': {},
+
 'brush-creek-ranch': {},
+
+'case': {},
 
 'clients': {},
 
 'contact': {},
 
 'footer-inner': {},
+
+'head': {
+    defaults: {
+        title: 'Got IT Digital Media <> Web Design & Marketing Firm | Chicago, IL 60606',
+        useSocialMetaTags: false
+    }
+},
 
 'header': {
 	item: [{
@@ -34,13 +45,6 @@
 
 'pure-aire': {},
 
-'head': {
-    defaults: {
-        title: 'Got IT Digital Media <> Web Design & Marketing Firm | Chicago, IL 60606',
-        useSocialMetaTags: false
-    }
-},
-
 'vv-supremo': {},
 
 __iconsData: {
@@ -61,6 +65,9 @@ __pages: [{
                 name: 'about',
                 href: 'about.html'
              },{
+                name: 'blog',
+                href: 'blog.html'
+             },{
                 name: 'clients',
                 href: 'clients.html'
              },{
@@ -72,6 +79,9 @@ __pages: [{
              },{
                 name: 'job',
                 href: 'job.html'
+             },{
+                name: 'pageList',
+                href: 'pageList.html'
              },{
                 name: 'privacy-policy',
                 href: 'privacy-policy.html'

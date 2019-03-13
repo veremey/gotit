@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$('.projects__container').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		initialSlide: 1,
+		initialSlide: 1,//1
 		autoplay: true,
 		autoplaySpeed: 6000,
 		speed: 600,
@@ -140,6 +140,28 @@ if ($('.js-blur').length) {
 
 	// }
 }
+
+
+$('.projects__container').on('beforeChange', function(slick, currentSlide, nextSlide){
+
+	var maxSlideIndex = currentSlide.slideCount ;
+	var currentSlideIndex = currentSlide.currentSlide;
+	var nextSlideIndex = currentSlide.currentSlide + 1;
+	var prevSlideIndex = currentSlide.currentSlide - 1;
+	var self = $(this);
+
+
+	// $('[data-slick-index='+currentSlideIndex+']').addClass('fromRightToLeft');//<
+	// $('[data-slick-index='+prevSlideIndex+']').removeClass('fromRightToLeft, fromLeftToRight');
+	// $('[data-slick-index='+prevSlideIndex+']').addClass('fromRightToLeft');
+	// $('[data-slick-index='+currentSlideIndex+']').removeClass('fromRightToLeft');
+	// $('[data-slick-index='+nextSlideIndex+']').addClass('fromLeftToRight');
+	// var prevtText = $('[data-slick-index='+currentSlideIndex+']').find('.item__image_desk');
+	// prevtText.addClass('12121212212121221212');
+
+});
+
+// ======-------=====
 
 
 $('.projects__container').on('afterChange', function(slick, currentSlide, nextSlide){
@@ -310,11 +332,11 @@ function initMap() {
 		// gestureHandling: 'none',
 		// zoomControl: false
 	});
-	var image = 'static/img/content/icon-map.png';
+	var image = 'static/img/content/marker.png';
 	var marker = new google.maps.Marker({
 		position: uluru,
 		map: map,
-		// icon: image
+		icon: image
 		});
 
 	map.mapTypes.set('styled_map', styledMapType);
