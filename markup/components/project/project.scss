@@ -79,10 +79,23 @@
       height: auto;
       max-width: 100%;
       margin-right: auto;
-      transform: translateY(-300%);
+      transform: translateY(300%);
       transition: 0.6s .4s;
     }
   }
+  .slick-active {
+      .item__logo img {
+        transform: translate(0%)
+      }
+      .hidden-title span {
+        transform: translate(0);
+      }
+      .projects__item {
+        .btn {
+          transform: rotateX(0deg);
+        }
+      }
+    }
 }
 
 .projects__arrows {

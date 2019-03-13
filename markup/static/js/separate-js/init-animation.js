@@ -13,6 +13,18 @@ $('.js-cut').each(function(){
 });
 
 
+$('.js-cut-anima').each(function(){
+	var text = $(this).html().split(' '),
+		len = text.length,
+		result = [];
+
+	for( var i = 0; i < len; i++ ) {
+		result[i] = '<span class="hidden-title" animate ><span>' + text[i] + '</span></span>';
+	}
+	$(this).html(result.join(' '));
+});
+
+
 function initGlobalAnimations(container, selfTriggeredElems) {
 	var controller = new ScrollMagic.Controller();
 
@@ -30,6 +42,7 @@ function initGlobalAnimations(container, selfTriggeredElems) {
 					// .addIndicators({name: "2 (duration: 0)"})
 					.addTo(controller);
 			});
+
 		});
 	}
 }
@@ -67,6 +80,21 @@ function initGlobalAnimations(container, selfTriggeredElems) {
 			}
 		};
 		initGlobalAnimations( 'projects', selfTriggeredElems );
+		// #3
+		var selfTriggeredElems = {
+			el1: {
+				selector: '.sentence__item',
+				triggerHook: 1,
+				class: 'is-animated'
+			},
+			el2: {
+				selector: '[animate]',
+				triggerHook: 1,
+				class: 'is-animated'
+			}
+		};
+		initGlobalAnimations( 'sentence', selfTriggeredElems );
+
 
 	});//close window load
 

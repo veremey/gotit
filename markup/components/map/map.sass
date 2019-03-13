@@ -1,0 +1,153 @@
+
+.map
+  display: flex
+  flex-wrap: wrap
+  position: absolute
+  top: -192px
+  left: 50%
+  -webkit-transform: translate(-50%)
+  transform: translate(-50%)
+  max-width: 1224px
+  width: calc(100% - 40px)
+
+
+#map
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+
+.map__item
+  position: relative
+  background-color: #fff
+  background-size: cover
+  flex-basis: 100%
+  +r(650)
+    height: 350px
+  &:first-child
+    display: flex
+    align-items: center
+
+
+.map__container
+  height: 100%
+  position: relative
+  min-height: 320px
+
+.map__title
+  opacity: .3
+  color: #000
+  font-size: 18px
+  line-height: 24px
+  margin-bottom: 24px
+  font-weight: 400
+
+.map__location
+  color: #000
+  font-size: 35px
+  line-height: 45px
+  font-weight: 400
+  margin-bottom: 18px
+
+.map__address
+  color: grey
+  font-size: 22px
+  line-height: 34px
+  margin-bottom: 29px
+  a
+    color: grey
+
+.map__contact
+  margin-right: 37px
+  color: grey
+  font-size: 12px
+  line-height: 34px
+  display: inline-block
+  background-repeat: no-repeat
+  letter-spacing: .3px
+  a
+    color: grey
+
+.map__contacts
+  display: flex
+  flex-wrap: wrap
+
+.map__content
+  padding: 30px
+  min-height: 320px
+
+.map
+  .marker
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-35%, -73%)
+    transform: translate(-35%, -73%)
+    cursor: pointer
+    width: 63px
+    height: 76px
+    overflow: hidden
+    .loader-logo
+      background: #000
+      width: 50px
+      height: 50px
+      position: absolute
+      left: 0 !important
+      top: 0 !important
+      -webkit-transform: translate(6px, 6px)
+      transform: translate(6px, 6px)
+      .content
+        background: #fff
+    img
+      width: 100%
+      display: block
+      height: auto
+  agm-map
+    height: 100%
+    position: relative
+    min-height: 320px
+    display: block
+
+@media (min-width: 550px)
+  .map
+    flex-wrap: nowrap
+
+  .map__item
+    flex-basis: 50%
+
+
+
+@media (min-width: 768px)
+  .map
+    top: -222px
+
+  .map__item
+    min-height: 488px
+
+  .map__content
+    padding: 40px 60px 35px
+
+  .map__title
+    margin-bottom: 34px
+
+  .map__location
+    font-size: 45px
+    line-height: 55px
+
+
+
+@media (min-width: 992px)
+  .map__content
+    padding: 40px 120px 35px
+
+
+
+@media (min-width: 1260px)
+  .map__address, .map__contact
+    transition: opacity .15s linear
+
+  .map__address:hover, .map__contact:hover
+    opacity: .7
+
