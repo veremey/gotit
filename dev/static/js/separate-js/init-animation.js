@@ -56,12 +56,12 @@ function initGlobalAnimations(container, selfTriggeredElems) {
 		// #2
 		var selfTriggeredElems = {
 			el1: {
-				selector: '.projects__container',
+				selector: '.projects__arrows',
 				triggerHook: 1,
 				class: 'is-animated'
 			},
 			el2: {
-				selector: '.menu__item',
+				selector: '.projects__arrows_item',
 				triggerHook: 1,
 				class: 'is-animated'
 			}

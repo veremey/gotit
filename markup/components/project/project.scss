@@ -8,18 +8,21 @@
   justify-content: center;
   .btn {
     display: inline-flex;
+    transform: rotateX(90deg);
+    transform-origin: 50% 0;
+    transition: .6s .4s;
   }
 }
 
 .projects {
   position: relative;
-  &__container {
-    overflow: hidden;
-    max-height: 0;
-    &.is-animated{
-      max-height: 4000px
-    }
-  }
+  // &__container {
+  //   overflow: hidden;
+  //   max-height: 0;
+  //   &.is-animated{
+  //     max-height: 4000px
+  //   }
+  // }
   .item__title {
     color: #fff;
     font-size: 28px;
@@ -250,6 +253,11 @@
       }
       .hidden-title span {
         transform: translate(0);
+      }
+      .projects__item {
+        .btn {
+          transform: rotateX(0deg);
+        }
       }
     }
   }

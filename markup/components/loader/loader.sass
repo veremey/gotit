@@ -1,0 +1,69 @@
+
+.logo
+  display: block
+  position: relative
+  overflow: hidden
+  &:hover
+    .loader-logo
+      opacity: 1
+      animation-play-state: running
+  &__main,
+  &__sticky
+    display: block
+    transition: opacity .25s linear
+    >svg
+      width: 115px
+      height: auto
+    >img
+      display: block
+      width: 115px
+      height: auto
+  &__sticky
+    opacity: 0
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    img
+      max-width: 60px
+      max-height: 100%
+      width: auto
+      display: block
+      transition: opacity .3s linear
+    &:hover
+      img
+        opacity: 0
+  .loader-logo
+    background: #000
+    display: block
+    transition: opacity .25s linear
+    position: absolute
+    width: 30px
+    height: 30px
+    top: 23px
+    left: 20px
+    opacity: 0
+    animation-play-state: initial
+    +r(1260)
+      top: 17px
+      left: 15px
+    span
+      display: block
+    .content
+      background: #fff
+
+@media (min-width: 1260px)
+  .logo
+    svg
+      width: 155px
+
+
+    .loader-logo
+      width: 40px
+      height: 40px
+
+
